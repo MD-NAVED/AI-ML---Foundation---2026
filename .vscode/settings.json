@@ -1,0 +1,6 @@
+{
+    "editor.cursorStyle": "line-thin",
+    "editor.cursorWidth": 5,
+    "editor.cursorBlinking": "phase",
+    "python.REPL.enableREPLSmartSend": false
+}
