@@ -60,4 +60,4 @@ import numpy as np
 # print(np.var(agri_arr))    #This will calculate the variance of all elements in the array and return approximately 200.0.
 
 
-
+    
