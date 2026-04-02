@@ -73,4 +73,17 @@ import numpy as np
 
 # print(arr[-2:-3:-1 ,::-1]) # Extract the second-to-last row, but reverse the order of its elements.
 
-# print(arr[-2:-5:-1, -2:-5:-1])
+# print(arr[1:-1, 1:-1]) # Extract the inner 3x3 grid (excluding the border rows and columns).
+
+# arr = np.array([[[1,2,3,4],
+#                  [5,6,7,8],
+#                  [9,10,11,12]],
+
+#                 [[13,14,15,16],    
+#                  [17,18,19,20],
+#                  [21,22,23,24]]])
+
+                 
+# print(arr[0,:,-2:-1])
+
+# print(arr[::-1 , ::-1])
