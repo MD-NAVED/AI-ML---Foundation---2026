@@ -84,6 +84,7 @@ import numpy as np
 #                  [21,22,23,24]]])
 
                  
-# print(arr[0,:,-2:-1])
+# print(arr[0,:,-2:-1]) # Extract the second-to-last column from the first 2D array
 
-# print(arr[::-1 , ::-1])
+# print(arr[::-1 , ::-1]) # Reverse the order of both rows and columns
+
