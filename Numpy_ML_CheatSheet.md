@@ -29,9 +29,9 @@ In ML, you will constantly transform data shapes (e.g., flattening an image into
 <!-- * **`arr.shape`**: Returns a tuple of array dimensions. *The most checked attribute in ML debugging!*
 * **`arr.reshape()`**: Changes the shape of an array without changing its data.
 * **`arr.flatten()` / `arr.ravel()`**: Converts a multi-dimensional array into a 1D array. `ravel()` is usually faster as it returns a view instead of a copy. -->
-* **`arr.transpose()` or `arr.T`**: Transposes the array. *Essential for matrix multiplication.*
+<!-- * **`arr.transpose()` or `arr.T`**: Transposes the array. *Essential for matrix multiplication.*
 * **`np.expand_dims()`**: Expands the shape of an array. *Used to add a "batch" dimension.*
-* **`np.squeeze()`**: Removes single-dimensional entries from the shape of an array.
+* **`np.squeeze()`**: Removes single-dimensional entries from the shape of an array. -->
 
 ---
 

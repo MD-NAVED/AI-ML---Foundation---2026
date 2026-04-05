@@ -5,11 +5,16 @@
 # * **`np.linalg.norm()`**: Calculates the matrix or vector norm (L1 or L2 norms used in Regularization).
 
 
-import numpy as np
+# import numpy as np
 
-array_a = np.array([[1,2],
-                    [3,4]])
-array_b = np.array([[4,1],
-                    [2,3]])
+# array_a = np.array([[1,2],
+#                     [3,4]])
+# array_b = np.array([[4,1],
+#                     [2,3]])
 
-print(array_a @ array_b)
+# print(array_a @ array_b) # Matrix multiplication
+
+# print(np.linalg.inv(array_a)) # Inverse of a matrix
+
+# print(np.linalg.norm(array_a)) # Norm of a matrix
+
