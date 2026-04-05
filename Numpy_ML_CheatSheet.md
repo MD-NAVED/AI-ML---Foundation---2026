@@ -39,9 +39,9 @@ In ML, you will constantly transform data shapes (e.g., flattening an image into
 Machine learning relies heavily on matrix mathematics and aggregation.
 
 ### Matrix Operations
-* **`np.dot(A, B)` or `A @ B`**: Dot product of two arrays / Matrix multiplication. *The backbone of Neural Networks and Linear Regression.*
+<!-- * **`np.dot(A, B)` or `A @ B`**: Dot product of two arrays / Matrix multiplication. *The backbone of Neural Networks and Linear Regression.*
 * **`np.linalg.inv()`**: Computes the inverse of a matrix.
-* **`np.linalg.norm()`**: Calculates the matrix or vector norm (L1 or L2 norms used in Regularization).
+* **`np.linalg.norm()`**: Calculates the matrix or vector norm (L1 or L2 norms used in Regularization). -->
 <!-- 
 ### Aggregation Operations (Reduction)
 *Often used with the `axis` parameter (`axis=0` for columns, `axis=1` for rows).*
@@ -68,12 +68,12 @@ Machine learning relies heavily on matrix mathematics and aggregation.
 ---
 
 ## 5. Array Manipulation
-Combining multiple sets of data (like features and labels, or train and test sets).
+<!-- Combining multiple sets of data (like features and labels, or train and test sets).
 
 * **`np.concatenate()`**: Joins a sequence of arrays along an existing axis.
 * **`np.vstack()` / `np.row_stack()`**: Stacks arrays in sequence vertically (row wise).
 * **`np.hstack()` / `np.column_stack()`**: Stacks arrays in sequence horizontally (column wise).
-* **`np.split()`**: Splits an array into multiple sub-arrays. *Useful for splitting Data into Train/Validation chunks.*
+* **`np.split()`**: Splits an array into multiple sub-arrays. *Useful for splitting Data into Train/Validation chunks.* -->
 
 ---
 
