@@ -25,7 +25,7 @@ I am currently in **Phase 1**, mastering the foundational libraries required for
 ## 🛠️ Tech Stack
 * **Language:** Python 3.12+
 * **Libraries:** NumPy, Pandas, Matplotlib, Scikit-Learn (Upcoming)
-* **Tools:** Jupyter Notebooks, VS Code, Git/GitHub
+* **Tools:** Antigravity, Jupyter Notebooks, VS Code, Git/GitHub
 
 ---
 
