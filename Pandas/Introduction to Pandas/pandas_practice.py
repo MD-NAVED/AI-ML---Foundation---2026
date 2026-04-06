@@ -13,6 +13,7 @@ Key concepts covered:
 """
 
 import pandas as pd
+import matplotlib.pyplot as plt 
 
 
 
@@ -101,4 +102,68 @@ titanic = pd.read_csv("data/titanic.csv") # .reads_ mathod:- is used to read the
 
 
 # print(titanic.iloc[9:25, 2:5]) # .iloc[] method:- is used to display the rows and columns of the dataframe that satisfy the condition
+
+
+air_quality = pd.read_csv("data/air_quality_no2.csv",index_col=0,parse_dates=True) # .index_col() method:- is used to set the index of the dataframe
+# print(air_quality.head())
+
+
+# print(air_quality.plot()) # .plot() method:- is used to display the plot of the dataframe
+# plt.show()
+
+
+# print(air_quality["station_paris"].plot()) # .plot() method:- is used to display the plot of the dataframe
+# plt.show()
+
+
+# print(air_quality.plot.scatter(x="station_london", y="station_paris", alpha=0.5)) # .plot.scatter() method:- is used to display the scatter plot of the dataframe
+# plt.show()
+
+
+# print([ 
+#     method_name
+#     for method_name in dir(air_quality.plot)
+#     if not method_name.startswith("_")
+# ])# list comprehension:- is used to display the list of the dataframe
+
+
+# print(air_quality.plot.box())
+# plt.show()
+
+
+# axs = air_quality.plot.area(figsize=(12,4), subplots=True)#
+# print(axs)
+# plt.show()
+
+# fig, axs = plt.subplots(figsize=(12, 4)) # subplots() method:- is used to display the subplots of the dataframe
+
+# air_quality.plot.area(ax=axs) # .plot.area() method:- is used to display the area plot of the dataframe
+
+# axs.set_ylabel("NO$_2$ concentration") # set_ylabel() method:- is used to set the y-axis label of the dataframe
+
+# fig.savefig("no2_concentrations.png") # savefig() method:- is used to save the dataframe to an image file
+
+# plt.show() # show() method:- is used to display the plot of the dataframe
+
+
+
+# air_quality["london_mg_per_cubic"] = air_quality["station_london"] *1.8
+# print(air_quality.head())
+
+
+# air_quality["ratio_paris_antwerp"] = (air_quality["station_paris"] / air_quality["station_antwerp"])
+# print(air_quality.head())
+
+
+air_quality_renamed = air_quality.rename(
+    columns= {
+         "station_antwerp": "BETR801",
+        "station_paris": "FR04014",
+        "station_london": "London Westminster",
+    }
+)
+# print(air_quality_renamed.head())
+
+# air_quality_renamed = air_quality_renamed.rename(columns=str.lower)
+# print(air_quality_renamed.head()) # .rename() method:- is used to rename the columns of the dataframe 
 
