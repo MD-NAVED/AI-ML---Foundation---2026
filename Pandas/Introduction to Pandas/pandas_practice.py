@@ -187,4 +187,59 @@ titanic = pd.read_csv("data/titanic.csv") # .reads_ mathod:- is used to read the
 # print(titanic["Pclass"].value_counts()) # .value_counts() method:- is used to display the value counts of the dataframe
 # print(titanic.groupby("Pclass")["Pclass"].value_counts())
 
+# print(titanic.sort_values(by ="Age").head()) # .sort_values() method:- is used to sort the dataframe by the specified column
+
+# print(titanic.sort_values(["Age","Pclass"],ascending=False).head()) # .sort_values() method:- is used to sort the dataframe by the specified column
+
+
+air_quality = pd.read_csv("data/air_quality_pm25_long.csv")
+# print(air_quality.head()) 
+
+# Filter no2 parameters (actually the 'air_quality_pm25_long.csv' contains 'no2' data)
+no2 = air_quality[air_quality["parameter"] == "no2"]
+
+
+no2_subset = no2.sort_index().groupby(["location"]).head(2)
+
+
+
+# print(air_quality.pivot_table(
+#     values="value",
+#     index="location",
+#     columns="parameter",
+#     aggfunc="mean"
+# ))
+
+# no2_pivot = no2.pivot_table(
+#     values="value",
+#     index="location",
+#     columns="parameter",
+#     aggfunc="mean"
+# )
+# print(no2_pivot)
+
+
+air_quality_no2 = pd.read_csv("data/air_quality_no2_long.csv",parse_dates=True)
+
+
+air_quality_no2 = air_quality_no2[["date.utc", "location", "parameter", "value"]]
+
+ 
+
+
+
+
+# air_quality_pm25 = pd.read_csv("data/air_quality_pm25_long.csv",parse_dates=True)
+
+# air_quality_pm25 = air_quality_pm25[["date.utc", "location", "parameter", "value"]]
+
+
+
+# air_quality = pd.concat([air_quality_no2, air_quality_pm25],axis=0)
+# # .concat() method:- is used to concatenate the dataframes
+
+
+
+# print('shape of the air_quality_no2',air_quality_no2.shape) # .shape method:- is used to display the shape of the dataframe
+# print('shape of the air_quality_pm25',air_quality_pm25.shape) # .shape method:- is used to display the shape of the dataframe
 
