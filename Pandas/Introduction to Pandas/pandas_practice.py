@@ -219,10 +219,10 @@ no2_subset = no2.sort_index().groupby(["location"]).head(2)
 # print(no2_pivot)
 
 
-air_quality_no2 = pd.read_csv("data/air_quality_no2_long.csv",parse_dates=True)
+# air_quality_no2 = pd.read_csv("data/air_quality_no2_long.csv",parse_dates=True)
 
 
-air_quality_no2 = air_quality_no2[["date.utc", "location", "parameter", "value"]]
+# air_quality_no2 = air_quality_no2[["date.utc", "location", "parameter", "value"]]
 
  
 

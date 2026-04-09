@@ -2,11 +2,11 @@
 
 When preparing data for Machine Learning, Pandas is your primary tool for data manipulation, cleaning, and feature engineering. Here is a categorized cheat sheet of the most critical Pandas methods you'll use in ML workflows.
 
-## 1. Data Input & Output
+<!-- ## 1. Data Input & Output
 Before you can train a model, you need to load your data (and potentially save cleaned data later).
 *   **`pd.read_csv()`**: Loads data from a CSV file into a DataFrame. (See also: `read_excel()`, `read_sql()`)
-*   **`df.to_csv()`**: Saves a DataFrame to a CSV file (often used with `index=False` so you don't save the row numbers).
-
+*   **`df.to_csv()`**: Saves a DataFrame to a CSV file (often used with `index=False` so you don't save the row numbers). -->
+<!-- 
 ## 2. Data Inspection & Exploration
 Understanding the shape, types, and distribution of your data is the first step in Exploratory Data Analysis (EDA).
 *   **`df.head(n)` / `df.tail(n)`**: View the first/last *n* rows of the dataset.
@@ -14,7 +14,7 @@ Understanding the shape, types, and distribution of your data is the first step 
 *   **`df.describe()`**: Generates summary statistics (mean, std, min, max, quartiles) for numerical columns.
 *   **`df.shape`**: Returns a tuple `(rows, columns)` representing the size of the dataset.
 *   **`df.value_counts()`**: Counts unique values in a Series. Extremely useful for checking class imbalances in your categorical target variable.
-*   **`df.corr()`**: Computes pairwise correlation of columns. Critical for feature selection and spotting multicollinearity (features that are highly correlated with each other).
+*   **`df.corr()`**: Computes pairwise correlation of columns. Critical for feature selection and spotting multicollinearity (features that are highly correlated with each other). -->
 
 ## 3. Data Cleaning
 Machine learning models cannot handle missing values or incorrect data types well.
