@@ -22,19 +22,19 @@ You often need to separate your features (X) from your target variable (y), or r
 *   **`df.iloc[]`**: Integer/position-based indexing. Useful for splitting sequences or traditional array indexing.
 *   **Boolean Indexing**: Filtering rows based on conditions, e.g., `df[df['Age'] > 18]`. -->
 
-## 5. Feature Engineering
+<!-- ## 5. Feature Engineering
 Transforming raw data into meaningful features that the model can understand.
 *   **`pd.get_dummies()`**: Performs One-Hot Encoding on categorical variables. ML models usually require numerical input, so converting text categories into binary columns is essential.
 *   **`df['col'].apply(func)`**: Applies a custom Python function along an axis of the DataFrame. Great for complex feature transformations.
 *   **`df['col'].map(dict_or_func)`**: Maps values of a Series using a given dictionary or function. Good for label encoding (e.g., mapping 'Yes' -> 1, 'No' -> 0).
 *   **`pd.to_numeric()`**: Converts arguments to numeric types. Useful when numbers are accidentally loaded as strings.
 *   **`pd.to_datetime()`**: Converts strings to datetime objects, allowing you to extract sub-features like year, month, or day of the week via the `.dt` accessor.
-*   **`pd.cut()` / `pd.qcut()`**: Bins continuous values into discrete intervals (e.g., converting continuous ages into discrete bins like 'Child', 'Adult', 'Senior').
+*   **`pd.cut()` / `pd.qcut()`**: Bins continuous values into discrete intervals (e.g., converting continuous ages into discrete bins like 'Child', 'Adult', 'Senior'). -->
 
-## 6. Aggregation & Grouping
+<!-- ## 6. Aggregation & Grouping
 Sometimes you need to aggregate data to create new features (e.g., calculating average spending per customer).
 *   **`df.groupby('col')`**: Groups the DataFrame by a specific column, usually followed by an aggregation function like `.mean()`, `.sum()`, or `.agg()`.
-*   **`df.pivot_table()`**: Creates a spreadsheet-style pivot table.
+*   **`df.pivot_table()`**: Creates a spreadsheet-style pivot table. -->
 
 ## 7. Combining Datasets
 If your features are spread across multiple tables, you need to bring them together.
