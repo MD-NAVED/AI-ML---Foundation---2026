@@ -99,8 +99,76 @@ cat  = pd.Categorical(['a','b','c'])
 #     calls.append(x)
 #     return x.upper()
 # result = cat.map(f) 
+ 
 # print(result)
 
 
 
 
+# to_numeric method is used to convert arguments to numeric types. Useful when numbers are accidentally loaded as strings.
+
+
+# s = pd.Series(['10','20.5','30'])
+# print(s)
+
+# numerical_s = pd.to_numeric(s)
+# print(numerical_s)
+
+s = pd.Series(['1','2','apple','4.5','-'])
+
+# numerical_s = pd.to_numeric(s, errors='coerce')
+# print(numerical_s) # errors='coerce' is used to convert non-numeric values to NaN.
+
+
+# Note: In Pandas 3.0+, `errors='ignore'` has been REMOVED. 
+# It will give a ValueError. You can only use 'raise' or 'coerce'.
+
+# =====================================================================================
+# pd.to_datetime()
+# Used to convert strings/objects into actual datetime objects.
+# Essential for Feature Engineering (extracting year, month, day, day of week).
+# =====================================================================================
+
+# date_series = pd.Series(['2023-10-01', '2023-10-05', 'Not-a-Date', '2023-10-15'])
+
+# # Convert to datetime, bad data becomes NaT (Not a Time)
+# datetime_series = pd.to_datetime(date_series, errors='coerce')
+# # print("--- Converted Datetime Series ---")
+# # print(datetime_series)
+
+# # # =====================================================================================
+# Extracting Features using .dt Accessor
+# =====================================================================================
+# print("\n--- Extracting Year, Month, Day ---")
+# df_dates = pd.DataFrame({'Date': datetime_series})
+# df_dates['Year'] = df_dates['Date'].dt.year
+# df_dates['Month'] = df_dates['Date'].dt.month
+# df_dates['Day_Name'] = df_dates['Date'].dt.day_name() # e.g. Monday, Tuesday
+
+# print(df_dates)
+
+
+# =====================================================================================
+# pd.cut() / pd.qcut()
+# Used to bin continuous values into discrete intervals.
+# =====================================================================================
+
+ages = pd.Series([10,20,35,37,41,52,57,63])
+
+ages_categories = pd.cut(ages, 
+bins =[0,18,60,100],
+labels=['Child','Adult','Senior']
+)
+
+# print(ages_categories)
+
+
+
+marks = ([10,20,30,40,50,60,70,80,90,100])
+
+marks_quartiles = pd.qcut(marks,
+q=4,
+labels=['Poor','Fair','Good','Excellent']
+)
+
+print(marks_quartiles)
