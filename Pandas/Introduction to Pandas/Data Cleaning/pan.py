@@ -7,6 +7,7 @@
 # *   **`df.replace()`**: Replaces specific values with other values (e.g., replacing '?' with `np.nan`).
 
 
+from pandas.core import series
 import pandas as pd
 import numpy as np
 
@@ -79,12 +80,12 @@ df = pd.DataFrame({
 
 
 # dataframe replacement
-df = pd.DataFrame({
-    "A": [1,2,3,4,5],
-    "B": [6,7,8,9,10],
-    "C": ["a","b","c","d","e"]
-})
-# print(df)
+# df = pd.DataFrame({
+#     "A": [1,2,3,4,5],
+#     "B": [6,7,8,9,10],
+#     "C": ["a","b","c","d","e"]
+# })
+# # print(df)
 # print(df.replace(4, 0)) # replace() - is used to replace values in the dataframe. It returns a new dataframe with values replaced. 
 
 
@@ -94,4 +95,27 @@ df = pd.DataFrame({
 # dictionary like replacment
 # print(df.replace({1: 0, 2: 1, 3: 2, 4: 3, 5: 4}))
 # print(df.replace({"A": {1: 0, 2: 1, 3: 2, 4: 3, 5: 4}}))
-print(df.replace({2 : 10 , 4:100})) 
+# print(df.replace({2 : 10 , 4:100})) 
+# print(df.replace({"A":{1:100 , 4:400}}))
+
+# to_replace:-  
+
+# s = pd.Series([10, "a","a","c","a"])
+# print(s.replace(to_replace = "a", value=np.nan)) # to_replace() - is used to replace values in the dataframe. It returns a new dataframe with values replaced. 
+
+
+
+
+
+df = pd.DataFrame(
+   {
+       "A": [0, 1, 2, 3, 4],
+       "B": ["a", "b", "c", "d", "e"],
+       "C": ["f", "g", "h", "i", "j"],
+   }
+)
+
+# print(df.replace(to_replace = "[a-g]",  value="e", regex=True)) # regex=True - is used to replace values in the dataframe. It returns a new dataframe with values replaced.
+
+# print(df.replace(to_replace={"B": "[a-b]" ,"C":"[h-j]"}, value="e" , regex=True))
+

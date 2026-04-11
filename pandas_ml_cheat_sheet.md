@@ -16,13 +16,13 @@ Understanding the shape, types, and distribution of your data is the first step 
 *   **`df.value_counts()`**: Counts unique values in a Series. Extremely useful for checking class imbalances in your categorical target variable.
 *   **`df.corr()`**: Computes pairwise correlation of columns. Critical for feature selection and spotting multicollinearity (features that are highly correlated with each other). -->
 
-## 3. Data Cleaning
+<!-- ## 3. Data Cleaning
 Machine learning models cannot handle missing values or incorrect data types well.
 *   **`df.isnull()` / `df.isna()`**: Returns a Boolean mask indicating missing values. Often chained with `.sum()` (e.g., `df.isnull().sum()`) to count missing values per column.
 *   **`df.dropna()`**: Drops rows or columns containing missing values.
 *   **`df.fillna(value)`**: Replaces missing values with a specified value (like the mean, median, or a constant like 0).
 *   **`df.drop_duplicates()`**: Removes duplicate rows from the dataset.
-*   **`df.replace()`**: Replaces specific values with other values (e.g., replacing '?' with `np.nan`).
+*   **`df.replace()`**: Replaces specific values with other values (e.g., replacing '?' with `np.nan`). -->
 
 ## 4. Selecting & Filtering
 You often need to separate your features (X) from your target variable (y), or remove irrelevant columns.
