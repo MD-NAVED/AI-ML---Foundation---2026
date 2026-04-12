@@ -32,8 +32,7 @@ I am currently in **Phase 1**, mastering the foundational libraries required for
 ## 📈 Long-term Goals
 1.  **Master Machine Learning:** Deep dive into Supervised & Unsupervised Learning using Scikit-Learn.
 2.  **Deep Learning:** Build and deploy Neural Networks using PyTorch.
-3.  **Creative Integration:** Apply AI models to my **YouTube Animation Project** for character behavior and plot analysis.
-4.  **Career:** Transition into AI Engineering roles within international markets (Japan, UK, US).
+4.  **Career:** Transition into AI Engineering roles within international markets (UK, US, Australia).
 
 ---
 *“The best time to plant a tree was 20 years ago. The second best time is now.”*

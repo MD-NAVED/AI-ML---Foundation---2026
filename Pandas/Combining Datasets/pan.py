@@ -12,38 +12,38 @@ import pandas as pd
 
 #concat() :-
 
-df1 = pd.DataFrame({
-    "Name" : ['Anmit','Bhavna'],
-    "Score":['85',92]
-})
+# df1 = pd.DataFrame({
+#     "Name" : ['Anmit','Bhavna'],
+#     "Score":['85',92]
+# })
 
-df2 = pd.DataFrame({
-    'Name': ['Chetan', 'Diya'],
-    'Score': [78, 88]
-})
+# df2 = pd.DataFrame({
+#     'Name': ['Chetan', 'Diya'],
+#     'Score': [78, 88]
+# })
 
-# print(df1)
-# print(df2)
+# # print(df1)
+# # print(df2)
 
-combine_df = pd.concat([df1, df2],ignore_index=True)
-combine_df = pd.concat([df1, df2],ignore_index=True,axis=1)
-# print(combine_df)
-
-
-# mearge() :-
-
-df_students = pd.DataFrame({
-    'Roll_No': [1, 2, 3],
-    'Name': ['Amit', 'Bhavna', 'Chetan']
-})
+# combine_df = pd.concat([df1, df2],ignore_index=True)
+# combine_df = pd.concat([df1, df2],ignore_index=True,axis=1)
+# # print(combine_df)
 
 
-df_marks = pd.DataFrame({
-    'Roll_No': [2, 1, 4],
-    'Subject_Marks': [95, 88, 70]
-})
+# # mearge() :-
 
-final_result = pd.merge(df_students,df_marks,on='Roll_No',how='outer') # inner, left, right, outer
-print(final_result)
+# df_students = pd.DataFrame({
+#     'Roll_No': [1, 2, 3],
+#     'Name': ['Amit', 'Bhavna', 'Chetan']
+# })
+
+
+# df_marks = pd.DataFrame({
+#     'Roll_No': [2, 1, 4],
+#     'Subject_Marks': [95, 88, 70]
+# })
+
+# final_result = pd.merge(df_students,df_marks,on='Roll_No',how='outer') # inner, left, right, outer
+# print(final_result)
 
 
