@@ -36,7 +36,7 @@ Sometimes you need to aggregate data to create new features (e.g., calculating a
 *   **`df.groupby('col')`**: Groups the DataFrame by a specific column, usually followed by an aggregation function like `.mean()`, `.sum()`, or `.agg()`.
 *   **`df.pivot_table()`**: Creates a spreadsheet-style pivot table. -->
 
-## 7. Combining Datasets
+<!-- ## 7. Combining Datasets
 If your features are spread across multiple tables, you need to bring them together.
 *   **`pd.concat()`**: Concatenates DataFrames along a particular axis (stacking them vertically or horizontally).
-*   **`pd.merge()`**: Joins DataFrames based on a common key column (similar to SQL joins).
+*   **`pd.merge()`**: Joins DataFrames based on a common key column (similar to SQL joins). -->
