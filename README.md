@@ -1,40 +1,28 @@
-# AI & Machine Learning Foundation (2026)
+# Hi, I'm Naved! 📊
 
-> "A comprehensive technical roadmap and codebase documenting my transition into Machine Learning and AI Engineering. This repository tracks my daily progress in mastering Data Manipulation, Statistical Modeling, and Neural Networks."
+**Data Analyst | Python & SQL Specialist**
 
-## 🚀 The Journey
-This repository serves as my digital laboratory and progress log. I am transitioning from a Computer Engineering background into **AI and Machine Learning Engineering**, documenting every step of the process.
+I transform raw, messy data into actionable business insights. With a background in Computer Science and a deep focus on Data Engineering and Analytics, I build end-to-end pipelines that help in data-driven decision-making.
 
-## 🎯 Current Focus: The Data Science Trio
-I am currently in **Phase 1**, mastering the foundational libraries required for high-performance data processing and analysis.
+### 🛠️ Technical Toolkit:
+- **Languages:** Python (Pandas, NumPy, Matplotlib, Seaborn), SQL (DuckDB, PostgreSQL).
+- **Data Analysis:** Data Cleaning, Exploratory Data Analysis (EDA), Statistical Modeling.
+- **Workflow:** Live API Integration, ETL Pipelines, Jupyter Notebooks.
 
-**Weeks 1-2:** NumPy (Numerical Computing & Matrix Operations)
-**Weeks 3-4:** Pandas (Data Manipulation & Analysis)
-**Weeks 5-6:** Matplotlib & Seaborn (Data Visualization)
+### 🚀 Featured Projects:
 
----
+#### 1. [Data-Analysis-Portfolio](https://github.com/MD-NAVED/Data-Analysis-Portfolio)
+An end-to-end analytics portfolio showcasing real-world pipelines:
+- **Data Cleaning:** Extensive use of Pandas for handling missing values and outliers.
+- **High-Speed Analytics:** Used **DuckDB** for lightning-fast SQL queries on large datasets.
+- **Visualization:** Created insightful charts using Matplotlib to drive business strategy.
 
-## 📅 Learning Log & Milestones
+#### 2. [AI-ML Foundation 2026](https://github.com/MD-NAVED/AI-ML---Foundation---2026)
+A technical roadmap documenting my transition into Machine Learning and AI Engineering, focusing on data manipulation and statistical foundations.
 
-### **Phase 1: Foundations (In Progress)**
-* **Day 1:** Environment setup and NumPy array fundamentals.
-* **Goal:** Build a script to process and manipulate image pixel data using NumPy arrays.
-
----
-
-## 🛠️ Tech Stack
-* **Language:** Python 3.12+
-* **Libraries:** NumPy, Pandas, Matplotlib, Scikit-Learn (Upcoming)
-* **Tools:** Antigravity, Jupyter Notebooks, VS Code, Git/GitHub
+### 🎯 What I'm working on:
+- Automating data workflows for real-time business reporting.
+- Advanced predictive modeling for market trends.
 
 ---
-
-## 📈 Long-term Goals
-1.  **Master Machine Learning:** Deep dive into Supervised & Unsupervised Learning using Scikit-Learn.
-2.  **Deep Learning:** Build and deploy Neural Networks using PyTorch.
-4.  **Career:** Transition into AI Engineering roles within international markets (UK, US, Australia).
-
----
-*“The best time to plant a tree was 20 years ago. The second best time is now.”*
-
----
+📫 **Connect with me:** [andyk4548@gmail.com](mailto:andyk4548@gmail.com)
